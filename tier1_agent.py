@@ -23,10 +23,10 @@ class SimpleAgent(OneShotAgent):
 
     def on_negotiation_success(self, contract, mechanism):
         self.secured += contract.agreement["quantity"]
-
+    
     def propose(self, negotiator_id: str, state) -> "Outcome":
-        return self.best_offer(negotiator_id)
-
+        return 
+    
     def respond(self, negotiator_id, state, offer):
         my_needs = self._needed(negotiator_id)
         if my_needs <= 0:

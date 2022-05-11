@@ -9,11 +9,12 @@ File to run negotiation tournament
 """
 
 import warnings
+import my_agent 
 
 from scml.oneshot import *
 from scml.scml2020.utils import anac2022_oneshot
 from tier1_agent import LearningAgent
-from my_agent import MyAgent # TODO: change the import agent name to your agent class name
+from my_agent import GIGASIGMASUPERAGENT1337 # TODO: change the import agent name to your agent class name
 
 warnings.simplefilter("ignore")
 
@@ -33,7 +34,7 @@ def shorten_names(results):
 
 def main():
     # TODO: Modify this list to include/delete your agents! (Make sure to change MyAgent to your agent class name)
-    tournament_types = [RandomOneShotAgent, LearningAgent, GreedyOneShotAgent, MyAgent]
+    tournament_types = [RandomOneShotAgent, LearningAgent, GreedyOneShotAgent, GIGASIGMASUPERAGENT1337]
 
     # TODO: Modify the parameters to see how your agent performs in different settings
     results = anac2022_oneshot(
